@@ -77,3 +77,51 @@
 		}
 	}
 }
+
+.big-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 45px;
+
+	&__left, &__right {
+		display: flex;
+		/*justify-content: center;
+		align-items: center;*/
+		width: 610px;
+		height: 350px;
+		border-radius: 10px;
+		box-shadow: 0 30px 30px rgba(49,49,48,.15);
+	}
+
+	&__left {
+		background-color: #ffd04b;
+		background-image: linear-gradient(50deg, #faa51a, rgba(255,207,75,0));
+		border: solid 2px #faa51a;
+	}
+
+	&__right {
+		background-color: #7fbbe7;
+		background-image: linear-gradient(50deg, #3c8fc3, rgba(119,183,229,0));
+		border: solid 2px #3c8fc3;
+	}
+
+	&__icon {
+		width: 169px;
+		height: 169px;
+		background-color: #fff;
+		border-radius: 50%;
+		box-shadow: 0 2px 4px rgba(67,41,1,0.35);
+		margin: 83px 0 0 94px;
+		padding: 32px 0 0 37px;
+	}
+
+	&__text {
+		font-family: 'FuturaPTMedium';
+		font-size: 42px;
+		width: 175px;
+		margin: 99px 0 0 46px;
+		letter-spacing: 0.02em;
+		line-height: 0.97em;
+		color: #3d3c3d;
+	}
+}
