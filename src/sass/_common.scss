@@ -22,6 +22,14 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'FuturaPTBook';
+	src: url('../fonts/FuturaPTBook.eot');
+	src: local('☺'), url('../fonts/FuturaPTBook.woff') format('woff'), url('../fonts/FuturaPTBook.ttf') format('truetype'), url('../fonts/FuturaPTBook.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	color: #3d3c3d;
 }
@@ -33,14 +41,17 @@ body {
 }
 
 .button {
-	width: 198px;
-	height: 42px;
+	display: inline-block;
 	border-radius: 5px;
 	background-color: #ffcf4b;
 	font-family: 'FuturaPTDemi';
 	font-size: 19px;
-	padding: 7px 0 0 27px;
+	padding: 7px 29px 10px 27px;
 	letter-spacing: 0.0287em;
+
+	&_large {
+		padding: 7px 47px 10px 48px;
+	}
 }
 
 .line {
@@ -77,4 +88,11 @@ body {
 			left: 100%;
 		}
 	}
+}
+
+.title {
+	font-family: 'FuturaPTHeavy';
+	font-size: 36px;
+	color: #3d3c3d;
+	letter-spacing: 0.03em;
 }

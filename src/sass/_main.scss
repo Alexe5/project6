@@ -125,3 +125,41 @@
 		color: #3d3c3d;
 	}
 }
+
+.section-history {
+	margin-top: 56px;
+
+	&__wrapper {
+		display: flex;
+		height: 400px;
+		background-color: #f7f7f9;
+		border-radius: 10px;
+		margin-top: 19px;
+	}
+
+	&__img {
+		width: 335px;
+		height: 335px;
+		border-radius: 50%;
+		margin: 33px 0 0 77px;
+	}
+
+	&__content {
+		width: 579px;
+		margin: 83px 0 0 106px;
+		letter-spacing: .063em;
+	}
+
+	&__title {
+		font-family: 'FuturaPTBook';
+		font-size: 27px;
+	}
+
+	&__text {
+		font-family: 'FuturaPTBook';
+		font-size: 22px;
+		margin: 7px 0 24px 0;
+		letter-spacing: 0.01em;
+		line-height: 1.32em;
+	}
+}
