@@ -52,6 +52,19 @@ body {
 	&_large {
 		padding: 7px 47px 10px 48px;
 	}
+
+	&_small {
+		font-size: 17px;
+		padding: 10px 24px 1px 23px;
+	}
+
+	&_color {
+		font-size: 17px;
+		padding: 9px 21px 11px 20px;
+		background-color: #1dc6a5;
+		color: #fff;
+		letter-spacing: 0.01em;
+	}
 }
 
 .line {
@@ -95,4 +108,45 @@ body {
 	font-size: 36px;
 	color: #3d3c3d;
 	letter-spacing: 0.03em;
+}
+
+.mid-button {
+	display: flex;
+	width: 399px;
+	height: 140px;
+	border-radius: 10px;
+
+	&_1 {
+		background-color: #ffd04b;
+		background-image: linear-gradient(50deg, #faa51a, rgba(255,207,75,0));
+	}
+
+	&_2 {
+		background-color: #ffa33c;
+		background-image: linear-gradient(50deg, #ef6e00, rgba(255,154,4,0));
+	}
+
+	&_3 {
+		background-color: #77b7e5;
+		background-image: linear-gradient(50deg, #3c8fc3, rgba(119,183,229,0));
+	}
+
+	&__icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 65px;
+		height: 65px;
+		border: 2px solid #3d3c3d;
+		border-radius: 50%;
+		margin: 38px 0 0 71px;
+		padding: 0 0 1px 2px;
+	}
+
+	&__text {
+		font-family: 'FuturaPTMedium';
+		font-size: 28px;
+		margin: 52px 0 0 23px;
+		letter-spacing: 0.02em;
+	}
 }
