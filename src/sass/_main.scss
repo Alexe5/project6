@@ -1,3 +1,7 @@
+.header {
+	/*overflow: hidden;*/
+}
+
 .header-top {
 	display: flex;
 	padding-top: 16px;
@@ -296,3 +300,125 @@
 	}
 }
 
+.footer {
+	height: 407px;
+	background: #7fbbe6;
+	border-bottom: 7px solid #ffcf4b;
+}
+
+.footer-top {
+	display: flex;
+	height: 288px;
+	background-image: url(../img/logo-small.png);
+	background-repeat: no-repeat;
+	background-position: 0px 36px;
+	padding: 40px 0 0 183px;
+	
+	&__item {
+		margin-right: 29px;
+
+		&:nth-child(4) {
+			margin-right: 8px;
+		}
+
+		&:nth-child(7) {
+			margin-right: 55px;
+		}
+
+		&:nth-child(8) {
+			margin-right: 0;
+		}
+	}
+
+	&__title {
+		font-family: 'FuturaPTMedium';
+		font-size: 22px;
+		color: #fff;
+		letter-spacing: 0.03em;
+		margin: 4px 0 13px 0;
+	}
+
+	&__link {
+		display: block;
+		font-family: 'FuturaPTBook';
+		font-size: 13px;
+		color: #000;
+		text-decoration: none;
+		letter-spacing: 0.06em;
+		margin-bottom: 3px;
+	}
+
+	&__text-dark {
+		font-family: 'FuturaPTMedium';
+		font-size: 22px;
+		color: #000;
+		font-style: normal;
+		text-align: right;
+		margin-top: 42px;
+		letter-spacing: 0.026em;
+		line-height: 1.3em;
+	}
+
+	&__text-light {
+		font-family: 'FuturaPTHeavy';
+		font-size: 22px;
+		color: #fff;
+		font-style: normal;
+		text-decoration: none;
+		float: right;
+		letter-spacing: 0.026em;
+	}
+}
+
+.footer-bottom {
+	display: flex;
+	height: 119px;
+}
+
+.copyrights {
+	font-family: 'Futurademic';
+	font-size: 14px;
+	padding: 23px 0 0 0;
+	letter-spacing: 0.06em;
+	line-height: 1.5em;
+	color: #000;
+}
+
+.army {
+	display: flex;
+	margin-left: 201px;
+
+	&__img1 {
+		width: 60px;
+		height: 58px;
+	}
+
+	&__img2 {
+		margin-left: 33px;
+		width: 59px;
+		height: 59px;
+	}
+
+	&__text {
+		font-family: 'GothamPro-Light';
+		font-size: 13px;
+		color: #fff;
+		margin: 14px 0 0 57px;
+		letter-spacing: 0.06em;
+		position: relative;
+
+		&:before {
+			position: absolute;
+			content: '';
+			top: -5px;
+			left: -20px;
+			width: 3px;
+			height: 41px;
+			background: #fff;
+		}
+	}
+
+	&__fb {
+    	margin: 29px 6px 0 257px;
+	}
+}
