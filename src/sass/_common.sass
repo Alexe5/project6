@@ -1,0 +1,194 @@
+@font-face 
+	font-family: 'FuturaPTMedium'
+	src: url('../fonts/FuturaPTMedium.eot')
+	src: local('☺'), url('../fonts/FuturaPTMedium.woff') format('woff'), url('../fonts/FuturaPTMedium.ttf') format('truetype'), url('../fonts/FuturaPTMedium.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'FuturaPTHeavy'
+	src: url('../fonts/FuturaPTHeavy.eot')
+	src: local('☺'), url('../fonts/FuturaPTHeavy.woff') format('woff'), url('../fonts/FuturaPTHeavy.ttf') format('truetype'), url('../fonts/FuturaPTHeavy.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'FuturaPTDemi'
+	src: url('../fonts/FuturaPTDemi.eot')
+	src: local('☺'), url('../fonts/FuturaPTDemi.woff') format('woff'), url('../fonts/FuturaPTDemi.ttf') format('truetype'), url('../fonts/FuturaPTDemi.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'FuturaPTBook'
+	src: url('../fonts/FuturaPTBook.eot')
+	src: local('☺'), url('../fonts/FuturaPTBook.woff') format('woff'), url('../fonts/FuturaPTBook.ttf') format('truetype'), url('../fonts/FuturaPTBook.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'Futurademic'
+	src: url('../fonts/futurademic.eot')
+	src: local('☺'), url('../fonts/futurademic.woff') format('woff'), url('../fonts/futurademic.ttf') format('truetype'), url('../fonts/futurademic.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+@font-face 
+	font-family: 'GothamPro-Light'
+	src: url('../fonts/GothamPro-Light.eot')
+	src: local('☺'), url('../fonts/GothamPro-Light.woff') format('woff'), url('../fonts/GothamPro-Light.ttf') format('truetype'), url('../fonts/GothamPro-Light.svg') format('svg')
+	font-weight: normal
+	font-style: normal
+
+.header 
+	overflow: hidden
+
+body 
+	color: #3d3c3d
+
+.wrapper 
+	margin: 0 auto
+	max-width: 1250px
+	width: 100%
+	/*border: 1px solid red*/
+
+.button 
+	display: inline-block
+	border-radius: 5px
+	background-color: #ffcf4b
+	font-family: 'FuturaPTDemi'
+	font-size: 19px
+	padding: 7px 29px 10px 27px
+	letter-spacing: 0.0287em
+	font-style: normal
+
+	+r(555)
+		margin-left: 5px
+
+	+r(374)
+		margin-left: 0
+
+	&_large 
+		padding: 7px 47px 10px 48px
+	
+	&_small 
+		font-size: 17px
+		padding: 10px 24px 1px 23px
+
+		+r(1249)
+			margin-right: 5px
+
+		+r(1166)
+			margin-right: 0
+
+		+r(950)
+			padding: 10px 24px 10px 23px
+			margin-bottom: 5px
+	
+	&_color 
+		font-size: 17px
+		padding: 9px 21px 11px 20px
+		background-color: #1dc6a5
+		color: #fff
+		letter-spacing: 0.01em
+	
+	&_light 
+		background-color: #fff
+		padding: 7px 46px 10px 45px
+		margin-top: -4px
+	
+.line 
+	display: flex
+	height: 6px
+	margin-top: 16px
+
+	+r(1125)
+		margin-top: 0
+
+	&__part1 
+		width: 835px
+		background: #ffd04b
+		position: relative
+
+		&:before 
+			position: absolute
+			content: ''
+			height: 6px
+			background: #ffd04b
+			width: 2000px
+			right: 100%
+		
+	&__part2 
+		width: 415px
+		background: #faa61a
+		position: relative
+
+		&:after 
+			position: absolute
+			content: ""
+			height: 6px
+			background: #faa61a
+			width: 2000px
+			left: 100%
+
+.title 
+	font-family: 'FuturaPTHeavy'
+	font-size: 36px
+	color: #3d3c3d
+	letter-spacing: 0.03em
+
+.mid-button 
+	display: flex
+	width: 399px
+	height: 140px
+	border-radius: 10px
+
+	+r(1249)
+		justify-content: space-around
+		align-items: center
+		width: 310px
+		height: 100px
+
+	+r(950)
+		width: 400px
+		height: 200px
+
+	+r(410)
+		width: 310px
+		height: 150px
+
+	&_1 
+		background-color: #ffd04b
+		background-image: linear-gradient(50deg, #faa51a, rgba(255,207,75,0))
+
+	&_2 
+		background-color: #ffa33c
+		background-image: linear-gradient(50deg, #ef6e00, rgba(255,154,4,0))
+	
+	&_3 
+		background-color: #77b7e5
+		background-image: linear-gradient(50deg, #3c8fc3, rgba(119,183,229,0))
+	
+	&__icon 
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 65px
+		height: 65px
+		border: 2px solid #3d3c3d
+		border-radius: 50%
+		margin: 38px 0 0 71px
+		padding: 0 0 1px 2px
+
+		+r(1249)
+			margin: 0
+			padding: 0
+	
+	&__text 
+		font-family: 'FuturaPTMedium'
+		font-size: 28px
+		margin: 52px 0 0 23px
+		letter-spacing: 0.02em
+
+		+r(1249)
+			margin: 0
