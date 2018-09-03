@@ -3,7 +3,7 @@
 	padding-top: 16px
 
 	+r(1249)
-		justify-content: space-between;
+		justify-content: space-between
 		align-items: center
 
 	+r(1125)
@@ -26,7 +26,7 @@
 
 		+r(1125)
 			font-size: 18px
-			width: 162px;
+			width: 162px
 
 		+r(555)
 			font-size: 15px
@@ -167,6 +167,9 @@
 		justify-content: space-between
 		align-items: center
 		height: 250px
+
+	a
+		text-decoration: none
 
 	&__left, &__right 
 		display: flex
@@ -363,11 +366,33 @@
 	height: 440px
 	background: linear-gradient(to bottom, #fff6d2, #fff6d2, #fff6d2, #fff6d2, #fff)
 	padding: 28px 0 0 0
+
+	+r(1249)
+		height: auto
+		padding: 0 5px
+
+	+r(950)
+		margin-top: 25px
 	
 	&__items 
 		display: flex
 		justify-content: space-between
-		margin-top: 30px
+		margin-top: 25px
+
+		+r(1249)
+			margin: 5px
+			justify-content: space-evenly
+			flex-wrap: wrap
+			padding: 0 15%
+
+		+r(915)
+			padding: 0
+
+		+r(635)
+			padding: 0 15%
+
+		+r(475)
+			padding: 0
 	
 	&__item 
 		width: 303px
@@ -375,6 +400,15 @@
 		border: 3px solid #ffcf4b
 		border-radius: 10px
 		padding: 16px 29px 0 29px
+		margin-top: 5px
+
+		&:hover
+			background-color: #ffcf4b
+			background-image: linear-gradient(50deg, #faa51a, rgba(255,207,75,0))
+
+		+r(625)
+			padding: 16px 10px 5px
+			height: auto
 	
 	&__date 
 		font-family: 'FuturaPTBook'
@@ -385,6 +419,13 @@
 		background-position: 100% 100%
 		background-repeat: no-repeat
 		padding-bottom: 23px
+
+		&:hover
+			background: linear-gradient(to bottom, #feca70 0%, #feca70 100%)
+			background-size: 100% 3px
+			background-position: 100% 100%
+			background-repeat: no-repeat
+			padding-bottom: 23px
 	
 	&__text 
 		font-family: 'FuturaPTBook'
@@ -400,10 +441,18 @@
 	height: 550px
 	padding: 2px 0 0
 
+	+r(1249)
+		height: auto
+		padding: 2px 5px 0
+
 	&__items 
 		display: flex
 		justify-content: space-between
 		margin-top: 24px
+
+		+r(1249)
+			flex-wrap: wrap
+			justify-content: space-evenly
 	
 	&__item 
 		width: 399px
@@ -411,11 +460,25 @@
 		background-color: #fff
 		border-radius: 10px
 		box-shadow: 0 10px 30px rgba(49,49,48,.07)
+
+		+r(1249)
+			margin-bottom: 5px
+
+		+r(425)
+			width: 310px
 	
 	&__img 
 		height: 191px
 		position: relative
+
+		+r(425)
+			height: auto
 	
+	&__img-item
+
+		+r(425)
+			width: 310px
+
 	&__img-bg 
 		position: absolute
 		bottom: 0
@@ -472,13 +535,13 @@
 	&__item 
 		margin-right: 29px
 
-		&:nth-child(4) 
+		&:nth-child(5) 
 			margin-right: 8px
 		
-		&:nth-child(7) 
+		&:nth-child(8) 
 			margin-right: 55px
 		
-		&:nth-child(8) 
+		&:nth-child(9) 
 			margin-right: 0
 		
 	&__title 
