@@ -510,19 +510,37 @@
 		display: flex
 		height: 70px
 		padding: 17px 0 0 262px
+
+		+r(1249)
+			padding: 0
+			justify-content: space-evenly
+			align-items: center
 	
 	&__text 
 		font-family: 'FuturaPTMedium'
 		font-size: 22px
 		letter-spacing: 0.029em
+
+		+r(768)
+			font-size: 18px
+			width: 210px
+
+		+r(425)
+			display: none
 	
 	&__button 
 		margin-left: 37px
+
+		+r(1249)
+			margin: 0
 	
 .footer 
 	height: 407px
 	background: #7fbbe6
 	border-bottom: 7px solid #ffcf4b
+
+	+r(902)
+		height: auto
 
 .footer-top 
 	display: flex
@@ -531,18 +549,45 @@
 	background-repeat: no-repeat
 	background-position: 0px 36px
 	padding: 40px 0 0 183px
+
+	+r(1249)
+		background-image: none
+		padding: 15px 5px 0 5px
+
+	+r(902)
+		height: auto
 	
 	&__item 
 		margin-right: 29px
 
+		+r(1249)
+			margin-right: 5px
+
+		+r(902)
+			display: none
+
 		&:nth-child(5) 
 			margin-right: 8px
+
+			+r(1249)
+				margin-right: 5px
 		
 		&:nth-child(8) 
 			margin-right: 55px
+
+			+r(1249)
+				margin-right: 5px
 		
 		&:nth-child(9) 
 			margin-right: 0
+			display: block
+
+			+r(902)
+				display: flex
+				flex-direction: column				
+				justify-content: center
+				align-items: center
+				width: 100%
 		
 	&__title 
 		font-family: 'FuturaPTMedium'
@@ -569,6 +614,9 @@
 		margin-top: 42px
 		letter-spacing: 0.026em
 		line-height: 1.3em
+
+		+r(902)
+			margin-top: 5px
 	
 	&__text-light 
 		font-family: 'FuturaPTHeavy'
@@ -583,6 +631,11 @@
 	display: flex
 	height: 119px
 
+	+r(1249)
+		justify-content: space-around
+		align-items: center
+		padding: 0 5px
+
 .copyrights 
 	font-family: 'Futurademic'
 	font-size: 14px
@@ -591,18 +644,36 @@
 	line-height: 1.5em
 	color: #000
 
+	+r(1249)
+		padding: 0
+
+	+r(525)
+		font-size: 12px
+
 .army 
 	display: flex
 	margin-left: 201px
 
+	+r(1249)
+		margin: 0
+
 	&__img1 
 		width: 60px
 		height: 58px
+
+		+r(525)
+			display: none
 	
 	&__img2 
 		margin-left: 33px
 		width: 59px
 		height: 59px
+
+		+r(800)
+			margin-left: 5px
+
+		+r(525)
+			display: none
 	
 	&__text 
 		font-family: 'GothamPro-Light'
@@ -621,6 +692,22 @@
 			height: 41px
 			background: #fff
 
+			+r(525)
+				display: none
+
+		+r(800)
+			margin: 14px 0 0 25px
+
+		+r(525)
+			margin: 0
+
+.social
+
+	a
+		text-decoration: none
+
 	&__fb 
-    	margin: 29px 6px 0 257px
-	
+		margin: 29px 6px 0 257px
+
+		+r(1249)
+			margin: 0
