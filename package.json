@@ -61,5 +61,9 @@
     "webpack-glsl-loader": "^1.0.1",
     "require-yaml": "^0.0.1",
     "lodash": "^4.3.0"
+  },
+  "dependencies": {
+    "ember-burger-menu": "^3.3.2",
+    "react-burger-menu": "^2.5.2"
   }
 }

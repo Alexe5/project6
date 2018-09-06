@@ -7,11 +7,10 @@
 		align-items: center
 
 	+r(1125)
-		height: 73px
+		height: 100px
 		padding-top: 0
 
 	+r(374)
-		height: 100px
 		flex-direction: column
 		justify-content: space-evenly
 
@@ -58,8 +57,8 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		height: 43px
-		margin-top: 5px
+		height: 100px
+		margin: 0
 
 	&__link
 	
@@ -69,8 +68,16 @@
 .nav
 	display: flex
 
+	+r(955)
+		height: 100%
+		flex-direction: column
+		justify-content: space-around
+		align-items: flex-end
+		margin-right: 5px
+
 .menu 
 	display: flex
+	// display: none
 	margin: 10px 0 0 68px
 
 	+r(1249)
@@ -83,12 +90,37 @@
 
 	+r(955)
 		display: none
+		// display: flex
+		// position: absolute
+		// flex-direction: column
+		// width: 100%
+		// top: 0
+		// left: 0
+		// text-align: center
+		// background: green
+		// z-index: 1
+		// opacity: 0.5
+
+		// &:before
+		// 	position: absolute
+		// 	content: ''
+		// 	top: 5px
+		// 	right: 5px
+		// 	width: 5px
+		// 	height: 5px
+		// 	background-color: red
 
 	&__item 
 		margin-right: 1.645em
 
 		+r(1249)
 			margin-right: 0
+
+		+r(955)
+			margin-bottom: 25px
+
+			&:nth-child(7)
+				margin: 0
 	
 	&__link 
 		text-decoration: none
@@ -104,14 +136,34 @@
 		+r(1249)
 			font-size: 18px
 
+.toggle
+	display: none
+
+	+r(955)
+		display: block
+
+	&__item
+		display: block
+		width: 30px
+		height: 5px
+		border-radius: 5px
+		background: #000
+		margin-bottom: 5px
+
+		&:nth-child(3)
+			margin: 0
+
 .search 
 	width: 22px
 	height: 22px
-	background-image: url('../img/search.png')
+	// background-image: url('../img/search.png')
 	margin: 13px 0 0 14px
 
 	+r(1249)
 		margin: 0 0 0 5px
+
+	+r(955)
+		margin: 0
 
 .language 
 	display: flex
@@ -122,6 +174,9 @@
 	+r(1249)
 		margin: 0 5px 0 5px
 		width: 60px
+
+	+r(955)
+		margin: 0
 
 	&__item 
 		font-family: 'FuturaPTMedium'
@@ -152,7 +207,7 @@
 		
 		&_main 
 			color: #77b8e6
-		
+
 .big-buttons 
 	display: flex
 	justify-content: space-between
@@ -720,7 +775,7 @@
 
 .social
 
-	a
+	&__link
 		text-decoration: none
 
 	&__fb 
@@ -728,3 +783,37 @@
 
 		+r(1249)
 			margin: 0
+
+.side-nav
+	height: 100%
+	width: 0
+	position: fixed
+	// z-index: 1
+	top: 0
+	// left: 0
+	background-color: #ffcf4b
+	text-align: center
+	// opacity: 0.9
+	overflow-x: hidden
+	z-index: 1
+	padding-top: 75px
+	transition: 0.5s
+
+	&__link
+		text-decoration: none
+		font-size: 30px;
+		padding-bottom: 15px;
+		color: #77b8e6
+		display: block
+		transition: 0.3s
+		white-space: nowrap
+
+		&:hover
+			color: #fff
+
+.side-nav .btn-close
+	position: absolute
+	top: 92px
+	right: 4px
+	font-size: 55px
+	// margin-left: 50px

@@ -4,7 +4,6 @@ title: Юридична Сотня
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
-	
 <header class="header">
 	<div class="wrapper">
 		<div class="header-top">
@@ -22,20 +21,39 @@ title: Юридична Сотня
 			</a>
 			<nav class="nav">
 				<ul class="menu">
-					<li class="menu__item"><a href="" class="menu__link">Про нас</a></li>
-					<li class="menu__item"><a href="" class="menu__link">Діяльність </a></li>
-					<li class="menu__item"><a href="" class="menu__link">Учасникам війни</a></li>
-					<li class="menu__item"><a href="" class="menu__link">Юристам</a></li>
-					<li class="menu__item"><a href="" class="menu__link">Новини</a></li>
-					<li class="menu__item"><a href="" class="menu__link">Події</a></li>
-					<li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Діяльність</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Учасникам війни</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Юристам</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Новини</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Події</a></li>
+					<li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
 				</ul>
-				<div class="search"></div>
+				<span class="toggle">
+					<a href="#" class="toggle__link" onclick="openSlideMenu()">
+						<span class="toggle__item"></span>
+						<span class="toggle__item"></span>
+						<span class="toggle__item"></span>
+					</a>
+				</span>
+				<a href="#" class="search">
+					<img src="img/search.png" alt="search">
+				</a>
 				<div class="language">
 					<a href="#" class="language__item language__item_main">Укр</a>
 					<a href="#" class="language__item">Eng</a>
 				</div>
 			</nav>
+			<ul id="side-menu" class="side-nav">
+				<a href="#" class="btn-close side-nav__link" onclick="closeSlideMenu()">&times;</a>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Про нас</a></li>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Діяльність</a></li>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Учасникам війни</a></li>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Юристам</a></li>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Новини</a></li>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Події</a></li>
+				<li class="side-nav__item"><a href="#" class="side-nav__link">Контакти</a></li>
+			</ul>
 		</div>
 	</div>
 </header>
@@ -317,14 +335,23 @@ title: Юридична Сотня
 				</p>
 			</div>
 			<div class="social">
-				<a href="#">
+				<a href="#" class="social__link">
 					<img src="img/fb.png" alt="fb" class="social__fb">
 				</a>
-				<a href="#">
+				<a href="#" class="social__link">
 					<img src="img/in.png" alt="in" class="social__in">
 				</a>
 			</div>
 		</div>
 	</div>
 </footer>
+<script>
+	var openSlideMenu = function openSlideMenu() {
+  document.getElementById('side-menu').style.width = '100%';
+};
+
+var closeSlideMenu = function closeSlideMenu() {
+  document.getElementById('side-menu').style.width = '0';
+};
+</script>
 {% endblock %}

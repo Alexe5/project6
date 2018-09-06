@@ -11,279 +11,306 @@
   </head>
   <body>
     <!-- BEGIN content -->
-    <div class="out">
-      <header class="header">
-        <div class="wrapper">
-          <div class="header-top">
-            <div class="header-top__content">Юридична Сотня допомогла <span>24356</span> захисникам України</div>
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-top">
+          <div class="header-top__content">Юридична Сотня допомогла <span>24356</span> захисникам України</div>
+          <a href="#"><span class="button">Зробити внесок</span></a>
+          <div class="header-top__content">Номер гарячої лінії: <a href="tel:0800308100">0 800 308 100</a></div>
+        </div>
+        <div class="line">
+          <div class="line__part1"></div>
+          <div class="line__part2"></div>
+        </div>
+        <div class="header-bottom">
+          <a href="#" class="header-bottom__link">
+            <img src="img/logo.png" alt="logo" class="header-bottom__img">
+          </a>
+          <nav class="nav">
+            <ul class="menu">
+              <li class="menu__item"><a href="#" class="menu__link">Про нас</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Діяльність</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Учасникам війни</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Юристам</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Новини</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Події</a></li>
+              <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+            </ul>
+            <span class="toggle">
+              <a href="#" class="toggle__link" onclick="openSlideMenu()">
+                <span class="toggle__item"></span>
+                <span class="toggle__item"></span>
+                <span class="toggle__item"></span>
+              </a>
+            </span>
+            <a href="#" class="search">
+              <img src="img/search.png" alt="search">
+            </a>
+            <div class="language">
+              <a href="#" class="language__item language__item_main">Укр</a>
+              <a href="#" class="language__item">Eng</a>
+            </div>
+          </nav>
+          <ul id="side-menu" class="side-nav">
+            <a href="#" class="btn-close side-nav__link" onclick="closeSlideMenu()">&times;</a>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Про нас</a></li>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Діяльність</a></li>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Учасникам війни</a></li>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Юристам</a></li>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Новини</a></li>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Події</a></li>
+            <li class="side-nav__item"><a href="#" class="side-nav__link">Контакти</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="section-way">
+      <div class="wrapper">
+        <div class="big-buttons">
+          <a href="#">
+            <div class="big-buttons__left">
+              <div class="big-buttons__icon">
+                <img src="img/icon-left.png" alt="icon-left" class="big-buttons__img">
+              </div>
+              <p class="big-buttons__text"> Я хочу отримати допомогу </p>
+            </div>
+          </a>
+          <a href="#">
+            <div class="big-buttons__right">
+              <div class="big-buttons__icon">
+                <img src="img/icon-right.png" alt="icon-right" class="big-buttons__img">
+              </div>
+              <p class="big-buttons__text"> Я хочу надати допомогу </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="section-history">
+      <div class="wrapper">
+        <h2 class="title">Історії успіху</h2>
+        <div class="section-history__wrapper">
+          <div class="section-history__img" style="background-image: url('img/section-history__img.jpg')"></div>
+          <div class="section-history__content">
+            <h4 class="section-history__title">Тіріля Дмитро Юрійович</h4>
+            <p class="section-history__text"> Тіріля Дмитро Юрійович – один з тих військовослужбовців,<br> хто першим став на захист українських кордонів навесні 14-го року. Дмитро протягом трьох років воював у складі 14 бригади Збройних Сил ... </p>
+            <a href="#"><span class="button button_large">Читати далі</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-attractions">
+      <div class="wrapper">
+        <h2 class="title">Пам’ятки</h2>
+        <div class="section-attractions__wrapper">
+          <div class="section-attractions__item">
+            <div class="mid-button mid-button_1">
+              <div class="mid-button__icon">
+                <img src="img/mid-button1.png" alt="mid-button1" class="mid-button__img">
+              </div>
+              <p class="mid-button__text"> Пам’яток №1 </p>
+            </div>
+            <div class="buttons">
+              <a href="#"><span class="button button_small">Завантажити PDF</span></a>
+              <a href="#"><span class="button button_color">Консультація online</span></a>
+            </div>
+          </div>
+          <div class="section-attractions__item">
+            <div class="mid-button mid-button_2">
+              <div class="mid-button__icon">
+                <img src="img/mid-button2.png" alt="mid-button2" class="mid-button__img">
+              </div>
+              <p class="mid-button__text"> Пам’яток №2 </p>
+            </div>
+            <div class="buttons">
+              <a href="#"><span class="button button_small">Завантажити PDF</span></a>
+              <a href="#"><span class="button button_color">Консультація online</span></a>
+            </div>
+          </div>
+          <div class="section-attractions__item">
+            <div class="mid-button mid-button_3">
+              <div class="mid-button__icon">
+                <img src="img/mid-button3.png" alt="mid-button3" class="mid-button__img">
+              </div>
+              <p class="mid-button__text"> Пам’яток №3 </p>
+            </div>
+            <div class="buttons">
+              <a href="#"><span class="button button_small">Завантажити PDF</span></a>
+              <a href="#"><span class="button button_color">Консультація online</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-events">
+      <div class="wrapper">
+        <h2 class="title">Події</h2>
+        <div class="section-events__items">
+          <a href="" class="section-events__link">
+            <div class="section-events__item">
+              <h4 class="section-events__date">24/09/18</h4>
+              <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
+            </div>
+          </a>
+          <a href="" class="section-events__link">
+            <div class="section-events__item">
+              <h4 class="section-events__date">22/09/18</h4>
+              <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
+            </div>
+          </a>
+          <a href="" class="section-events__link">
+            <div class="section-events__item">
+              <h4 class="section-events__date">21/09/18</h4>
+              <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
+            </div>
+          </a>
+          <a href="" class="section-events__link">
+            <div class="section-events__item">
+              <h4 class="section-events__date">19/09/18</h4>
+              <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
+            </div>
+          </a>
+        </div>
+        <div class="section-events__button">
+          <a href="#"><span class="button button_large">Більше подій</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="section-news">
+      <div class="wrapper">
+        <h2 class="title">Новини</h2>
+        <div class="section-news__items">
+          <a href="" class="section-news__link">
+            <div class="section-news__item">
+              <div class="section-news__img">
+                <img src="img/section-news__img1.jpg" alt="section-news__img1" class="section-news__img-item">
+                <img src="img/section-news__img-bg.png" alt="section-news__img-bg" class="section-news__img-bg">
+              </div>
+              <h4 class="section-news__title"> Aenean eu leo quam.<br> Pellentesque ornare sem<br> lacinia quam venenatis vestibulum. </h4>
+              <p class="section-news__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor. </p>
+            </div>
+          </a>
+          <a href="" class="section-news__link">
+            <div class="section-news__item">
+              <div class="section-news__img">
+                <img src="img/section-news__img2.jpg" alt="section-news__img2" class="section-news__img-item">
+                <img src="img/section-news__img-bg.png" alt="section-news__img-bg" class="section-news__img-bg">
+              </div>
+              <h4 class="section-news__title"> Aenean eu leo quam.<br> Pellentesque ornare sem<br> lacinia quam venenatis vestibulum. </h4>
+              <p class="section-news__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor. </p>
+            </div>
+          </a>
+          <a href="" class="section-news__link">
+            <div class="section-news__item">
+              <div class="section-news__img">
+                <img src="img/section-news__img3.jpg" alt="section-news__img3" class="section-news__img-item">
+                <img src="img/section-news__img-bg.png" alt="section-news__img-bg" class="section-news__img-bg">
+              </div>
+              <h4 class="section-news__title"> Aenean eu leo quam.<br> Pellentesque ornare sem<br> lacinia quam venenatis vestibulum. </h4>
+              <p class="section-news__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor. </p>
+            </div>
+          </a>
+        </div>
+        <div class="section-news__button">
+          <a href="#"><span class="button button_large">Більше новин</span><a>
+        </div>
+      </div>
+    </section>
+    <section class="section-subscription">
+      <div class="wrapper">
+        <div class="section-subscription__content">
+          <div class="section-subscription__text"> Підписатися на розсилку Вісника Юридичної Сотні </div>
+          <div class="section-subscription__button">
+            <a href="#"><span class="button button_light">Підписатися</span><a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-top">
+          <div class="footer-top__item">
+            <div class="footer-top__title">Про нас</div>
+            <a href="#" class="footer-top__link">Ми в ЗМІ</a>
+            <a href="#" class="footer-top__link">Річні звіти</a>
+            <a href="#" class="footer-top__link">Для ЗМІ</a>
+            <a href="#" class="footer-top__link">Партнери</a>
+            <a href="#" class="footer-top__link">Донори</a>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer-top__title">Діяльність</div>
+            <a href="#" class="footer-top__link">Гаряча лінія</a>
+            <a href="#" class="footer-top__link">Пам’ятки</a>
+            <a href="#" class="footer-top__link">Вебінари</a>
+            <a href="#" class="footer-top__link">Освіта</a>
+            <a href="#" class="footer-top__link">Законопроекти</a>
+            <a href="#" class="footer-top__link">Аналітика</a>
+            <a href="#" class="footer-top__link">Вісники</a>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer-top__title">Учасникам війни</div>
+            <a href="#" class="footer-top__link">Зразки рапортів </a>
+            <a href="#" class="footer-top__link">Пам’ятки</a>
+            <a href="#" class="footer-top__link">Знайти юриста</a>
+            <a href="#" class="footer-top__link">Корисні контакти</a>
+            <a href="#" class="footer-top__link">Історії успіху</a>
+            <a href="#" class="footer-top__link">Відео блог</a>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer-top__title">Юристам</div>
+            <a href="#" class="footer-top__link">Законодавча база</a>
+            <a href="#" class="footer-top__link">Судова практика</a>
+            <a href="#" class="footer-top__link">Хочу допомогти</a>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer-top__title">Новини</div>
+            <a href="#" class="footer-top__link"></a>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer-top__title">Події</div>
+            <a href="#" class="footer-top__link"></a>
+          </div>
+          <div class="footer-top__item">
+            <div class="footer-top__title">Контакти</div>
+            <a href="#" class="footer-top__link"></a>
+          </div>
+          <div class="footer-top__item">
             <a href="#"><span class="button">Зробити внесок</span></a>
-            <div class="header-top__content">Номер гарячої лінії: <a href="tel:0800308100">0 800 308 100</a></div>
-          </div>
-          <div class="line">
-            <div class="line__part1"></div>
-            <div class="line__part2"></div>
-          </div>
-          <div class="header-bottom">
-            <a href="#" class="header-bottom__link">
-              <img src="img/logo.png" alt="logo" class="header-bottom__img">
-            </a>
-            <nav class="nav">
-              <ul class="menu">
-                <li class="menu__item"><a href="" class="menu__link">Про нас</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Діяльність </a></li>
-                <li class="menu__item"><a href="" class="menu__link">Учасникам війни</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Юристам</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Новини</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Події</a></li>
-                <li class="menu__item"><a href="" class="menu__link">Контакти</a></li>
-              </ul>
-              <div class="search"></div>
-              <div class="language">
-                <a href="#" class="language__item language__item_main">Укр</a>
-                <a href="#" class="language__item">Eng</a>
-              </div>
-            </nav>
+            <p class="footer-top__text-dark">Номер<br> гарячої лінії:</p>
+            <a href="tel:0800308100" class="footer-top__text-light">0 800 308 100</a>
+            <p class="footer-top__text-dark">Надіслати листа:</p>
+            <a href="mailto:help@U100.ua" class="footer-top__text-light">help@U100.ua</a>
           </div>
         </div>
-      </header>
-      <section class="section-way">
-        <div class="wrapper">
-          <div class="big-buttons">
-            <a href="#">
-              <div class="big-buttons__left">
-                <div class="big-buttons__icon">
-                  <img src="img/icon-left.png" alt="icon-left" class="big-buttons__img">
-                </div>
-                <p class="big-buttons__text"> Я хочу отримати допомогу </p>
-              </div>
+        <div class="footer-bottom">
+          <div class="copyrights">2018 Юридична сотня<br> Сайт створено за фінансової підтримки ПІБ</div>
+          <div class="army">
+            <img src="img/footer-logo1.png" alt="footer-logo1" class="army__img1">
+            <img src="img/footer-logo2.png" alt="footer-logo2" class="army__img2">
+            <p class="army__text"> Міністерство<br> соціальної політики України </p>
+          </div>
+          <div class="social">
+            <a href="#" class="social__link">
+              <img src="img/fb.png" alt="fb" class="social__fb">
             </a>
-            <a href="#">
-              <div class="big-buttons__right">
-                <div class="big-buttons__icon">
-                  <img src="img/icon-right.png" alt="icon-right" class="big-buttons__img">
-                </div>
-                <p class="big-buttons__text"> Я хочу надати допомогу </p>
-              </div>
+            <a href="#" class="social__link">
+              <img src="img/in.png" alt="in" class="social__in">
             </a>
           </div>
         </div>
-      </section>
-      <section class="section-history">
-        <div class="wrapper">
-          <h2 class="title">Історії успіху</h2>
-          <div class="section-history__wrapper">
-            <div class="section-history__img" style="background-image: url('img/section-history__img.jpg')"></div>
-            <div class="section-history__content">
-              <h4 class="section-history__title">Тіріля Дмитро Юрійович</h4>
-              <p class="section-history__text"> Тіріля Дмитро Юрійович – один з тих військовослужбовців,<br> хто першим став на захист українських кордонів навесні 14-го року. Дмитро протягом трьох років воював у складі 14 бригади Збройних Сил ...
-              </p>
-              <a href="#"><span class="button button_large">Читати далі</span></a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-attractions">
-        <div class="wrapper">
-          <h2 class="title">Пам’ятки</h2>
-          <div class="section-attractions__wrapper">
-            <div class="section-attractions__item">
-              <div class="mid-button mid-button_1">
-                <div class="mid-button__icon">
-                  <img src="img/mid-button1.png" alt="mid-button1" class="mid-button__img">
-                </div>
-                <p class="mid-button__text"> Пам’яток №1 </p>
-              </div>
-              <div class="buttons">
-                <a href="#"><span class="button button_small">Завантажити PDF</span></a>
-                <a href="#"><span class="button button_color">Консультація online</span></a>
-              </div>
-            </div>
-            <div class="section-attractions__item">
-              <div class="mid-button mid-button_2">
-                <div class="mid-button__icon">
-                  <img src="img/mid-button2.png" alt="mid-button2" class="mid-button__img">
-                </div>
-                <p class="mid-button__text"> Пам’яток №2 </p>
-              </div>
-              <div class="buttons">
-                <a href="#"><span class="button button_small">Завантажити PDF</span></a>
-                <a href="#"><span class="button button_color">Консультація online</span></a>
-              </div>
-            </div>
-            <div class="section-attractions__item">
-              <div class="mid-button mid-button_3">
-                <div class="mid-button__icon">
-                  <img src="img/mid-button3.png" alt="mid-button3" class="mid-button__img">
-                </div>
-                <p class="mid-button__text"> Пам’яток №3 </p>
-              </div>
-              <div class="buttons">
-                <a href="#"><span class="button button_small">Завантажити PDF</span></a>
-                <a href="#"><span class="button button_color">Консультація online</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section-events">
-        <div class="wrapper">
-          <h2 class="title">Події</h2>
-          <div class="section-events__items">
-            <a href="" class="section-events__link">
-              <div class="section-events__item">
-                <h4 class="section-events__date">24/09/18</h4>
-                <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
-              </div>
-            </a>
-            <a href="" class="section-events__link">
-              <div class="section-events__item">
-                <h4 class="section-events__date">22/09/18</h4>
-                <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
-              </div>
-            </a>
-            <a href="" class="section-events__link">
-              <div class="section-events__item">
-                <h4 class="section-events__date">21/09/18</h4>
-                <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
-              </div>
-            </a>
-            <a href="" class="section-events__link">
-              <div class="section-events__item">
-                <h4 class="section-events__date">19/09/18</h4>
-                <p class="section-events__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolout </p>
-              </div>
-            </a>
-          </div>
-          <div class="section-events__button">
-            <a href="#"><span class="button button_large">Більше подій</span></a>
-          </div>
-        </div>
-      </section>
-      <section class="section-news">
-        <div class="wrapper">
-          <h2 class="title">Новини</h2>
-          <div class="section-news__items">
-            <a href="" class="section-news__link">
-              <div class="section-news__item">
-                <div class="section-news__img">
-                  <img src="img/section-news__img1.jpg" alt="section-news__img1" class="section-news__img-item">
-                  <img src="img/section-news__img-bg.png" alt="section-news__img-bg" class="section-news__img-bg">
-                </div>
-                <h4 class="section-news__title"> Aenean eu leo quam.<br> Pellentesque ornare sem<br> lacinia quam venenatis vestibulum. </h4>
-                <p class="section-news__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor. </p>
-              </div>
-            </a>
-            <a href="" class="section-news__link">
-              <div class="section-news__item">
-                <div class="section-news__img">
-                  <img src="img/section-news__img2.jpg" alt="section-news__img2" class="section-news__img-item">
-                  <img src="img/section-news__img-bg.png" alt="section-news__img-bg" class="section-news__img-bg">
-                </div>
-                <h4 class="section-news__title"> Aenean eu leo quam.<br> Pellentesque ornare sem<br> lacinia quam venenatis vestibulum. </h4>
-                <p class="section-news__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor. </p>
-              </div>
-            </a>
-            <a href="" class="section-news__link">
-              <div class="section-news__item">
-                <div class="section-news__img">
-                  <img src="img/section-news__img3.jpg" alt="section-news__img3" class="section-news__img-item">
-                  <img src="img/section-news__img-bg.png" alt="section-news__img-bg" class="section-news__img-bg">
-                </div>
-                <h4 class="section-news__title"> Aenean eu leo quam.<br> Pellentesque ornare sem<br> lacinia quam venenatis vestibulum. </h4>
-                <p class="section-news__text"> Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor. </p>
-              </div>
-            </a>
-          </div>
-          <div class="section-news__button">
-            <a href="#"><span class="button button_large">Більше новин</span><a>
-          </div>
-        </div>
-      </section>
-      <section class="section-subscription">
-        <div class="wrapper">
-          <div class="section-subscription__content">
-            <div class="section-subscription__text"> Підписатися на розсилку Вісника Юридичної Сотні </div>
-            <div class="section-subscription__button">
-              <a href="#"><span class="button button_light">Підписатися</span><a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="footer-top">
-            <div class="footer-top__item">
-              <div class="footer-top__title">Про нас</div>
-              <a href="#" class="footer-top__link">Ми в ЗМІ</a>
-              <a href="#" class="footer-top__link">Річні звіти</a>
-              <a href="#" class="footer-top__link">Для ЗМІ</a>
-              <a href="#" class="footer-top__link">Партнери</a>
-              <a href="#" class="footer-top__link">Донори</a>
-            </div>
-            <div class="footer-top__item">
-              <div class="footer-top__title">Діяльність</div>
-              <a href="#" class="footer-top__link">Гаряча лінія</a>
-              <a href="#" class="footer-top__link">Пам’ятки</a>
-              <a href="#" class="footer-top__link">Вебінари</a>
-              <a href="#" class="footer-top__link">Освіта</a>
-              <a href="#" class="footer-top__link">Законопроекти</a>
-              <a href="#" class="footer-top__link">Аналітика</a>
-              <a href="#" class="footer-top__link">Вісники</a>
-            </div>
-            <div class="footer-top__item">
-              <div class="footer-top__title">Учасникам війни</div>
-              <a href="#" class="footer-top__link">Зразки рапортів </a>
-              <a href="#" class="footer-top__link">Пам’ятки</a>
-              <a href="#" class="footer-top__link">Знайти юриста</a>
-              <a href="#" class="footer-top__link">Корисні контакти</a>
-              <a href="#" class="footer-top__link">Історії успіху</a>
-              <a href="#" class="footer-top__link">Відео блог</a>
-            </div>
-            <div class="footer-top__item">
-              <div class="footer-top__title">Юристам</div>
-              <a href="#" class="footer-top__link">Законодавча база</a>
-              <a href="#" class="footer-top__link">Судова практика</a>
-              <a href="#" class="footer-top__link">Хочу допомогти</a>
-            </div>
-            <div class="footer-top__item">
-              <div class="footer-top__title">Новини</div>
-              <a href="#" class="footer-top__link"></a>
-            </div>
-            <div class="footer-top__item">
-              <div class="footer-top__title">Події</div>
-              <a href="#" class="footer-top__link"></a>
-            </div>
-            <div class="footer-top__item">
-              <div class="footer-top__title">Контакти</div>
-              <a href="#" class="footer-top__link"></a>
-            </div>
-            <div class="footer-top__item">
-              <a href="#"><span class="button">Зробити внесок</span></a>
-              <p class="footer-top__text-dark">Номер<br> гарячої лінії:</p>
-              <a href="tel:0800308100" class="footer-top__text-light">0 800 308 100</a>
-              <p class="footer-top__text-dark">Надіслати листа:</p>
-              <a href="mailto:help@U100.ua" class="footer-top__text-light">help@U100.ua</a>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <div class="copyrights">2018 Юридична сотня<br> Сайт створено за фінансової підтримки ПІБ</div>
-            <div class="army">
-              <img src="img/footer-logo1.png" alt="footer-logo1" class="army__img1">
-              <img src="img/footer-logo2.png" alt="footer-logo2" class="army__img2">
-              <p class="army__text"> Міністерство<br> соціальної політики України </p>
-            </div>
-            <div class="social">
-              <a href="#">
-                <img src="img/fb.png" alt="fb" class="social__fb">
-              </a>
-              <a href="#">
-                <img src="img/in.png" alt="in" class="social__in">
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+    <script>
+      var openSlideMenu = function openSlideMenu()
+      {
+        document.getElementById('side-menu').style.width = '100%';
+      };
+      var closeSlideMenu = function closeSlideMenu()
+      {
+        document.getElementById('side-menu').style.width = '0';
+      };
+
+    </script>
     <!-- END content -->
     <!-- BEGIN scripts -->
     <script type="text/javascript" src="js/app.js"></script>
